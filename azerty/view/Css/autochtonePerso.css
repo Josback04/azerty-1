@@ -1,0 +1,235 @@
+section
+{
+    /* background-color: coral; */
+}
+
+.principal
+{
+    border: 1px solid #ffc4ab;
+    width: 60%;
+    border-radius: 10px;
+    margin: 0 0 0 20%;
+    padding: 30px;
+    display: flex;
+    background-color: #ffc4ab;
+}
+
+span{
+    color:#003d59 ;
+}
+p
+{
+    color: white;
+}
+
+.nom
+{
+    width: 100%;
+    border: 1px solid #ffc4ab;
+    border-radius: 10px;
+    
+}
+
+.nom p
+{
+    margin: auto;
+    font-size:27px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.destination
+{
+    width: 100%;
+    border: 1px solid ;
+    margin-top: -100px;
+    height: 475px;
+}
+.left{
+    background-color: #dad8e4;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.destination p
+{
+    margin: auto;
+    font-size: 27px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.destination-plus p
+{
+    font-size: 30px;
+}
+
+.destination-list a :hover{
+color: #fff;
+}
+.destination-list a:nth-child(n-1):hover{
+    color: coral; 
+}
+
+.contact
+{
+    height: 50px;
+    padding: 20px 0 0 0;
+}
+
+.contact a
+{
+    background-color: coral;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid coral;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact a:hover
+{
+    background-color: #fff;
+    color: coral;
+    text-transform: uppercase;
+    border: 1px solid coral;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact .email
+{
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+.chat
+{
+    background-color: #dad8e4;
+    border-radius: 5px;
+    margin: 3% 0 0 35%;
+    padding: 10px;
+    position: fixed;
+    width: 30%;
+    border: 1px solid black;
+    height: 450px;
+    /* margin-left: 20%; */
+    scrollbar-color: #aaa transparent;
+    scrollbar-width: thin;
+
+}
+
+.chat::-webkit-scrollbar{
+    width: 8px;
+}
+.chat::-webkit-scrollbar-thumb{
+    background: #aaa;
+    border-radius: 8px;
+}
+
+.chat .hide
+{
+    background-color: #ffc4ab;
+    border-radius: 2px;
+    color: white;
+    position: absolute;
+    margin-left: 39%;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.chat .send
+{
+    position: fixed;
+    margin-top: 340px;
+    width: 30%;
+    /* border-top: 1px solid black; */
+    
+    padding-top: 10px;
+    
+}
+
+.chat .send textarea
+{
+    width: 77%;
+    float: left;
+    height: 30px;
+    padding: 5px;
+}
+
+.chat .send input
+{
+   
+    /* height: 30px; */
+    padding: 10px;
+    background-color: #003d59;
+    color: #fff;
+    /* width: 80px; */
+    border-radius: 5px;
+}
+
+.chat .send input:hover
+{
+    background-color: white;
+    border: 1px solid rgb(3, 5, 121);
+    color: rgb(3, 5, 121);
+}
+
+.chat h3
+{
+   border-bottom:  1px solid   black;
+   text-align: left;
+}
+
+.message
+{
+    position: fixed;
+    color: black;
+    overflow: auto;
+    /* border: 1px solid black; */
+    height: 350px;
+    width: 30%;
+    
+    
+}
+.message::-webkit-scrollbar-track{
+    width: 2px;
+}
+
+.message .message-in
+{
+    background-color: rgb(162, 162, 162);
+    max-width: max(300px);
+    border-radius: 5px 5px 5px 0px;
+    padding: 5px 10px 5px 10px;
+    margin: 2.5% 0 2.5% 0;
+}
+
+.message .message-in p
+{
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+    width: 100%;
+}
+
+.message .message-out
+{
+    background-color: rgba(0, 0, 0, 0.793);
+    /* margin-left: 10px; */
+    max-width: max(300px);
+    border-radius: 5px 5px 0px 5px;
+    padding: 5px 10px 5px 10px;
+    margin: 2.5% 0 2.5% 15%;
+}
+
+.message .message-out p
+{
+    color: rgb(215, 215, 215);
+    font-size: 15px;
+    text-align: justify;
+    width: 100%;
+}

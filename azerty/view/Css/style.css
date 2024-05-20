@@ -1,0 +1,199 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.banniere_image{
+    background: url(./chateau1.jpg);
+}
+
+nav{
+    float: right;    
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+h1{
+   margin-top: 90px;
+   text-align: center;
+   color: white;
+    
+}
+
+.contour_barre_recherche{
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    justify-content: center;
+    background-color: ghostwhite;
+}
+
+.zone_barre_recherche{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+    padding: 20px;
+}
+.zone_barre_recherche>button{
+    background-color: #ffe044;
+    width: 100px;
+    border: 10px solid #ffe044;
+}
+
+.Middle{
+    margin-top: 100px;
+    display: flex; 
+}
+
+.container_card .card_content{
+    display: flex;
+    margin-right: 75px;
+    overflow: auto;
+}
+aside{
+    flex: 1.2 ;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+.Why_us{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 1000px;  
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.Recommended_destination_container{
+    display: flex;
+    
+
+}
+
+.imageOv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.Recommended_destination{
+    border-radius: 50px;
+    background: white;
+}
+
+.Recommended_destination_content{
+    display: flex;
+    
+    margin-left: 10px;
+}
+
+.position{
+    margin-top: 5px;
+    border-radius: 50px;
+    background-color: white;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+.generale{
+    border-radius: 50px;
+    background-color: white;
+}
+.position_place{
+    display: flex;
+    margin-left: 20px;
+}
+
+.un, .une{
+    position: relative;
+    margin-left: 20px;
+}
+.image_hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image_hover--blur{
+    backdrop-filter: blur(5px);
+}
+.image_hover--primary{
+   background: #009578; 
+}
+.image_hover > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image_hover:hover{
+    opacity: 1;
+}
+.image_hover:hover > *{
+    transform: translateY(0);
+}
+.texte_hover{
+    font-size: 1.25em;
+    margin-top: 5em;
+}
+.image_hover a{
+    border: 1px solid black;
+    color: coral;
+}
+
+.autochtone_card{
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.generale_top_autochtones{
+    display: flex;
+    justify-content: space-between;
+}
+.all_autochtones{
+float: right;
+}
+
+.azerty, .information, .social_media, .titre_footer{
+    display: grid;
+    
+}
+
+footer{
+    margin-top: 50px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-color: #0b669a;
+}

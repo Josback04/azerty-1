@@ -1,0 +1,323 @@
+body{
+    background-color:rgba(221,235,233,.8);
+}
+
+section.autochBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enTete{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 100px ;
+    margin-top: 50px;
+    
+}
+.photoProfil{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border: 1px solid #fff;
+    background-color: gainsboro;
+    width: 295px;
+    box-shadow: 6px 6px 10px salmon;
+    border-radius: 10px;
+    border-bottom: 1px solid salmon;
+    /* border-bottom: 1px solid salmon; */
+    margin-bottom: 30px;
+    
+}
+.photoProfil img{
+    width: 205px; /* width du container des sites sera 205+40=245px */
+    border-radius: 100px;
+}
+
+.aPropos{
+    display: flex;
+    /* display: flex; */
+}
+
+.information .dataDroit{
+margin-left: 350px;
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation .aPropos{
+    display: none;
+}
+.navigation .aPropos.active{
+    display: inline-flex ;
+}
+/* identite  */
+.identite{
+    font-size: 25px;
+}
+.identite span{
+  color: #003d59;
+}
+.identite span:nth-child(6){
+    color: salmon;
+}
+
+/* barre de navigation0 */
+.lien{
+    margin-top: 75px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight:bolder ;
+    border-bottom: 1px solid salmon;
+    /* cursor: pointer; */
+}
+
+.identiteContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.modifProfilContainer{
+    margin-top: 80px;
+    border: 1px solid #003d59;
+    border-radius: 10px;
+    
+    padding: 5px;
+}
+
+.navigation{
+    /* margin-top: 20px; */
+}
+
+/* colonne gauche */
+.colGauche{
+    background-color:rgba(221,235,233,.8);
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);    
+    padding: 30px 60px 30px 20px;
+}
+
+.enTete{
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);
+    background-color: rgba(255, 255, 255, 0.791);
+}
+/* css des sites crées */
+.siteCreer{
+    max-width: 245px;
+}
+.siteCreer .site img{
+    max-width: 245px;
+    filter: opacity(0.8) drop-shadow(0 0 0 rgba(221,235,233,.8));
+}
+
+/* css modifier profil */
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+section.show .profile{
+    display: none;
+}
+section .profile .profile-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #4070f4;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.profile .profile-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile .button{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: #4070f4;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.profile .button:hover{
+    background: #275df1;
+}
+.profile .button i{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.profile .button button{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+}
+
+section .popup-outer{
+    position: absolute;
+    display: flex;
+    bottom:0%;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    height: 850px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+section.show .popup-outer{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+section .popup-box{
+    position: relative;
+    padding: 30px;
+    max-width: 380px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+}
+.popup-box .close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: #b4b4b4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.popup-box .close:hover{
+    color: #333;
+}
+section .popup-box .profile-text{
+    display: flex;
+    align-items: center;
+}
+section .popup-box img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+.profile-text .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.profile-text .text .name{
+    font-size: 14px;
+    font-weight: 400;
+}
+.profile-text .text .profession{
+    font-size: 12px;
+    font-weight: 500;
+}
+section .popup-box textarea{
+    min-height: 140px;
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    resize: none;
+    font-size: 14px;
+    font-weight: 400;
+    background: #f3f3f3;
+}
+section .popup-box .button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.popup-box .button button{
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #6f93f6;
+    margin-left: 8px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button button.cancel{
+    background: #f082ac;
+}
+.button button.cancel:hover{
+    background: #ec5f95;
+}
+.button button.send:hover{
+    background: #275df1;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #ec5f95;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* code chat */
+
+.chat {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.darker{
+background-color: #ccc;
+background-color: #ddd;
+}
+.chat::after{
+content: "";
+clear: both;
+display: table;
+}
+.time-right{
+    float: right;
+    color: #aaa;
+}
+.time-left{
+    float: left;
+    color:#999;
+}

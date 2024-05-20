@@ -1,0 +1,117 @@
+*** header.php ***
+
+Essaye d'inspecter la partie :
+
+- J'y ai mis la fx session_start()
+    => elle sert à lancer l'utilisation des session dans une page
+
+- Il y a la class header
+    => Cette class a la fx __constructeur(), déjà on a parlé de son rôle l'autre fois, mais son rôle est plus simple que
+       celui d'avant. Maintenant, il ne met que le titre et le lien du style 
+    => j'ai aussi rajouté à cette class, la fx nav(), il sert à faire apparaitre la nav barre
+
+    Si tu veux seulement du style et du titre sans nav barre, tu n'auras qu'à faire : new header('titre', 'style');
+        C'est à cause de ce qui se passait d'ailleurs avec login.php. Ca affichait la nav barre aussi
+        Donc j'ai simplement fait new header('titre', 'style');
+    
+    Sinon si tu veux le style, le titre et la nav barre, tu devras faire :
+        $_nom_variable = new header('titre', 'style');
+        $_nom_variable -> nav();
+        C'est l'exemple de toutes les autres interfaces
+
+
+
+*** footer.php ***
+
+Jusque là j'ai pas encore compris ce que tu pensais, du coup tu vas m'expliquer avant que je ne dynamise cette interface
+
+
+
+*** index.php ***
+
+- On a inclu des fichiers à extension php, tels que le fichier du controller (indexController.php), le footer, le header,...
+
+- J'ai effacé tes codes html statiques pour les remplacer par des fx php dynamiques qui sont toutes implementées dans le
+    le controller, et les toutes sont en mode random (aléatoire)
+
+- Toutes les photos sont aléatoires, même les noms des autochtones les sont. vu que le nombre d'affichage dans index est limité
+    j'ai écris un algorithme qui change les données à chaque chargement de la page. Tu peux essayer 
+
+- Lorsqu'on est connecté, on peut créer un site mais lorsqu'on ne le pas, on peut rejoindre
+    Try it aussi.
+
+- Sinon les autres textes de motiv, je les garde, c'est important
+
+
+*** destinationPerso ***
+
+- J'ai rien capté de l'interface, tu vas m'expliquer en face
+
+
+*** destination ***
+
+- J'ai supprimé l'idée des regions africaines, c'était plus concis de rechercher selon les continents
+    qui sont aléatoires eux aussi. Les photos changent aussi selon les lieux
+    Si zongo a 20 photos, on prendra des photos de façon aléatoire. Si on a 10 lieux, les 10 lieux seront toujours affichés
+    mais des photos toujours différentes à chaque refresh de la page. Certaines reviennent de temps en temps. tout est 
+    question de chance
+
+- Si aucun continent n'est selectionné, il va affciher en aléatoire toutes les destinations du monde(qui existe dans 
+    notre bdd)
+
+- Sinon si on selectionne un continent, il t'affiche toutes les destinations de l'Afrique...
+
+*** Database.sql ***
+
+=> C'est la priorité, je t'ai laissé des données dans la bdd que je t'ai send, tu verras quasiment ce que j'ai ici chez moti
+
+Merci beaucoup pour le dévouement...
+
+#Jo
+
+//UPdate from JosBack
+
+j'ai crée l'interface "autochtonePerso.php" pour chaque autochtone, si tu es un visiteur tu pourras voir ses informations et lui écrire
+si c'est toi meme l'autochtone tu peux modifier tes informations...
+j'ai pas trouvé l'interface "chat" dans myschool, donc situ peuxintegrer ce serait top au cas contraire tu me signales
+
+pour la page "destinationPerso.php" le code Js fait des siennes, je dois t'expliquer pour que tu comprennes mais sinon c'est bon
+
+**** creationSite****
+ici j'ai créé la possibilité de créer un site, à toi de conduire dans la BDD, 
+**********************
+
+je pense que c'est bon, j'ai donné les infos nécessaires.
+toutefois ecris moi si ,y a problème
+
+sorry pour les accents et la grammaire ☻
+
+
+#Dernière mise au point
+
+A index.php -> au niveau du titre "C'EST PAS TOUT", il devait normalement y avoir des images. Essaye de revoir ça
+
+    Les animations d'images là. Les carousselles à index.php
+    Voir plus (Pour les autochtones), ça va nous emmener où ?
+    Il nous faut aussi une interface pour l'ensemble d'autochtones
+
+destination et login c'est parfait
+
+destinationPerso, revoit ça. Je dirai même que tu puisses vraiment pivoter
+Un truc assez simple qui prône la description de la destination, et afficher les photos qui défiles selon les dates et leurs descriptions
+Les photos c'est par exemple toutes les photos qui concernent zongo et l'heure de la publication et d'autres petits détails
+Une possibilité de rajouter les photos pour le site aussi, cas de zongo
+
+Un endroit pour le propriétaire du site, un lien qui ira jusqu'à autochtonePerso pour sa description et peut-être discuter directement
+
+
+Pour autochtonePerso, revois aussi le design
+Lorsqu'on clique sur discuter, popup ebima direct
+Ca va afficher les conv déjà existantes et un textarea où l'on peut ajouter un message
+Lorsqu'on cliquesur modifier, on peut ajouter une photo ou non, changer son nom,... Mais pas ajouter un message. A quoi ça servirait ?
+
+
+Le footer, on en a déjà parlé bro, juste des faux partenaires même 55
+
+Bro, me temps presse. N'oublie pas de télécharger des belles photos comme Tokyo sur internet, haute resolution tu me les envoies sous format
+document, je vais les photoshoper moi-même

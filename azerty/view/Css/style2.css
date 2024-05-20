@@ -1,0 +1,949 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: #003d59;
+}
+
+h1,h2,h3,h4,h5,h6,p,li,a{
+    color: #003d59;
+}
+
+header{
+    /* position: absolute; */
+    top: 2;
+    left: 0;
+    width: 100%;
+    /* padding: 12px 52px 41px 9px; */
+    
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #ffc4ab; */
+    /* position: sticky; */
+    top: 0;display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: #760001; */
+    /* position: sticky; */
+    top: 0;
+}
+nav .onglets{
+    display: flex;
+}
+nav ul{
+    list-style-type: none;
+}
+header nav ul{
+    display: flex;  
+}
+
+nav li{
+    margin-right: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+nav li {
+    color: #003d59;
+    text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+nav li a:hover{
+    color: blueviolet;
+}
+.notreDescription{
+    text-transform: uppercase;
+    max-width: 500px;
+    font-size: 60px;
+    line-height: 77px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.littleDescription{
+    padding-right: 200px;
+    max-width: 300px;
+    padding-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn.btn-destination{
+    width: 220px;
+    color: #fff;
+    background-color: #003d59;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.btn.btn-destination:hover{
+    border: 2px solid #003d59;
+    background-color: #fff;
+    color: #003d59;
+}
+.basCarrousel{
+    padding: 150px 0 50px;
+    display:flex ;
+    background-color: #ffc4ab;
+}
+.descriptionRole{
+    font-weight: 400;
+}
+.carrouselDroit{
+    display: flex;
+    position: absolute;
+}
+.carrouselDroit img{
+    position: absolute;
+    max-width: 494px;
+    /* width: 100%;
+    height: 100%; */
+    /* top: 50%; */
+    left: 50%;
+    border-radius: 10px;
+}
+.carrouselDroit img:nth-child(1){
+    left: 50px;
+    rotate: -5.2deg;
+}
+.carrouselDroit img:nth-child(2){
+    bottom: -650px;
+    /* left: 100%; */
+    left: 300px;
+    rotate: 5.2deg;
+}
+.carrouselDroit img:nth-child(3){
+   
+    top: 0;
+    right: 250px;
+}
+
+.descriptionRole, .descriptionRoleDecale{
+    max-width: 800px;
+    font-size: 50px;
+    line-height: 57px;
+}
+.descriptionRoleDecale{
+  padding-left: 100px;
+  max-width: 600px;
+}
+
+.contentRole{
+    display: flex;
+}
+.role{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.notreRole{
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+.role li.cadre span{
+    position: absolute;
+    display: block;
+    /* left: 6px; */
+    /* top: 122%; */
+    left: 65%;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+}
+.role li.cadre span::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: inherit;
+    opacity: .2;
+}
+
+.notreRole .contentRole .imageCoinGauche img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.elementorWidgetContainer .imageCoinGauche .imageCoinGauche1{
+    position: absolute;
+    top: -220px;
+}
+
+.imageCoinGauche1 img:nth-child(1){
+    position: absolute;
+    left: 60px;
+    rotate: 9.2deg;
+}
+
+.imageCoinGauche1 img:nth-child(2){
+    position: absolute;
+    rotate: -4.5deg;
+    max-width: 170px;
+    max-height: 260px;
+    left: 10px;
+}
+
+.notreRole .imageCoinDroit .imageCoinGauche1:first-child{
+    bottom: -155px;
+    left: 12%;
+    -webkit-transform: rotate(5.92deg);
+    -ms-transform: rotate(5.92deg);
+    transform: rotate(5.92deg);
+    width: 30.05208%;
+}
+
+.notreRole .imageCoinDroit .imageCoinGauche1:nth-child(2) {
+    bottom: -100px;
+    left: 5.5%;
+    -webkit-transform: rotate(-9.18deg);
+    -ms-transform: rotate(-9.18deg);
+    transform: rotate(-9.18deg);
+    width: 11.25%;
+}
+.rolePlus{
+    color: #fe5925;
+    max-width: 400px;
+    text-transform: uppercase;
+    /* text-align: right; */
+    /* padding-left: 100px; */
+    font-size: 57px;
+}
+.rolePlusDescritpion{
+    width: 400px; 
+}
+.cadre{
+    width: 300px;
+    font-size: 23px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+.rolePlusPlus{
+    max-width: 350px;
+    font-size: 21px;
+    padding-bottom: 50px;
+    /* padding-left: 240px; */
+}
+.rolePlusContainer{
+    margin-top: 50px;
+}
+ .elementorWidgetContainer{
+background-color: #fceecf;
+position: relative;
+    /* top: 200px; */
+padding: 20px;
+
+ }
+
+.titleDestination{
+    text-align: center;
+    font-size: 30px;
+}
+.destinationSlide{
+    margin-bottom: 80px;
+    position: relative;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    /* justify-content: space-between;*/
+}
+
+.destinationSlide .slideImage{
+    position: relative;
+    margin-top: 40px;
+}
+.destinationSlide .slideImage img{
+    max-width: 650px;
+}
+.destinationSlide .slideImage img:nth-child(1){
+    position: absolute;
+    left: 25%;
+    top: -10%;
+    z-index: 2;
+}
+.destinationSlide .slideImage img:nth-child(2){
+    /* position: absolute; */
+    z-index: 1;
+    left: 10%;
+}
+.destination{
+    padding-top: 25px;
+}
+
+.destinationSlide .slideImage img:nth-child(3){
+    position: absolute;
+    left: 65%;
+}
+
+
+
+
+/* .sliderItem{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(40,39,39,0);
+    --swiper-theme-color: $themeColor;
+    text-align: left;
+    font-family: Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    hyphens: manual;
+    list-style: none;
+    color: #007bff;
+    background-color: transparent;
+    line-height: 0;
+    border-style: solid;
+    border-width: 0;
+    transition-property: border, background ,transform,-webkit-transform;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 100%;
+    box-shadow: none;
+    text-decoration: none;
+    transform-style: preserve-3d;
+    position: relative;
+    padding-bottom: 45.837%;
+    cursor: url("/wp-content/themes/tpg-theme/resources/images/ico/cursor.svg") 50 35,auto;
+    width: 669.412px;
+    transition-duration: 600ms;
+    transform: translate3d(0px, 0px, -3000px) rotateX(0deg) rotateY(0deg);
+    z-index: -29;
+} */
+
+.destination .destinationContent{
+    position: relative;
+    
+}
+.destination{
+    /* top: -10px; */
+    margin-top: 80px;
+    background-color: #b6d1cd;
+    position: relative;
+    top: 100px;
+}
+.autochtonesSection{
+    padding: 75px 0 80px;
+     
+}
+.autochtone_card{
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0 px;
+}
+
+.autochtone_card h3
+{
+    width: 160px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.generale_top_autochtones{
+    display: flex;
+    justify-content: space-between;   
+}
+.generale_top_autochtones .voirAutochtone{
+    position: relative;
+    right: 50px;
+    top: 80px;
+    font-size: 20px;
+}
+
+.generale_top_autochtones .voirAutochtone:hover{
+    /* color: #d3045f; */
+    text-decoration: underline;
+
+    transform: scale(1.5);
+}
+
+.autochtone_card:hover
+{
+    /* background-color: #003d59;
+    border: 1px solid #fff;
+    color: #fff; */
+
+}
+
+.autochtone_card h3:hover
+{
+    background-color: #003d59;
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    color: #fff;
+}
+
+.autochtone_card .card_content_autochtone{
+    text-align: center;
+}
+
+footer{
+    background-color:rgba(221,235,233,.5);
+    margin-top: 105px;
+}
+.footerBox{
+    /* padding: 50px 0 68px; */
+    /* margin-top: 50px; */
+}
+
+.destination{
+    position: relative;
+}
+.container{
+    padding-left: 115px;
+    padding-right: 115px;
+}
+
+
+.footerNav{
+    display: flex;
+    
+   gap: 200px;
+    /* padding-top: 7px; */
+}
+
+footer .footerBox .container .footerNav ul{
+    width: 50%;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+
+.basCarrousel .hautCarrousel{
+position: relative;
+max-width: 570px;
+top: 110px;
+}
+
+.basCarrousel .hautCarrousel .carrouselDroit{
+     top: -58px;
+     left: -37px;
+     z-index: 2;
+     width: 100%;
+     min-width: 340px;
+}
+
+.sousHeader{
+    padding: 150px 0 50px;
+    background-color: #fff;
+}
+
+.listeDestination{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.boxDestination{
+    padding-bottom: 25px;
+    width: 1000px;
+    border-bottom: 2px solid #003d59;
+    z-index: 2;
+    position: relative;
+
+}
+.boxDestination .listeDestination .endroit a{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.imageDestination .carteImage a{
+    position: relative;
+    display: block;
+   
+}
+.boxDestination .listeDestination .endroit a:hover{
+    border-bottom: 5px solid #003d59;
+}
+.generale{
+
+    padding-left: 115px;
+    padding-right: 115px;
+}
+.boxDestination .listeDestination .endroit :active{
+    border-bottom: 5px solid #003d59;
+}
+.imageDestination{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    /* width: 1000px; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 36px;
+        /* margin-left: -15px;
+        margin-right:-15px ; */
+
+    
+}
+
+.h6, h6{
+    font-size: 24px;
+}
+.imageDestination .carteImage a .imageTitle{
+    position: absolute;
+   bottom: 1px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.boxDestination .listeDestination .imageDestinationCarte {
+    /* margin left:-80px; */
+}
+
+.imageDestination .carteImage{
+    margin-bottom: 30px;
+}
+
+/* .imageDestination .carteImage a .imageDestinationCarte{
+    height: 255px;
+    border-radius:4px ;
+} */
+ 
+.imageDestination .carteImage a .imageDestinationCarte{
+    height: 255px;
+    border: 1px transparent;
+    background: #003d59;
+    border-radius: 4px;
+}
+.imageDestination .carteImage a .imageDestinationCarte img{
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.imageDestination .carteImage a .imageDestinationCarte img{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5 ease;
+    will-change: transform;
+}
+
+.imageDestination .carteImage a .imageDestinationCarte:hover img{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.pays {
+display: flex;
+justify-content: space-between;
+border-radius: 5px;
+background-color: #b6d1cd;
+}
+.pays {
+    position: absolute;
+    /* padding: 10px 0px 100px 10px; */
+    width: 500px;
+}
+
+ul.subMenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pays {
+    
+}
+
+
+
+
+.boxDestination .listeDestination .endroit .carteImage{
+    display: none;
+    position: absolute;
+}
+.boxDestination .listeDestination .endroit:hover .carteImage{
+    display: block;
+}
+
+/* .boxDestination .listeDestination .endroit .carteImage .imageDestinationCarte img{
+    /* max-width: 107px; */
+    /* max-height: 122px; */
+ */
+
+.imageDestination .carteImage .imageDestinationCarte img{
+    max-width: 683px;
+}
+
+.bannerImages{
+    padding-top: 50px;
+    
+}
+
+.boxDestination .listeDestination .endroit .carteImage .imageTitle{
+    position: absolute;
+    bottom: 1px;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     z-index: 1;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+    padding: 287px 0 157px;
+}
+
+.sectionBg, .sectionBg::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sectionBg::before{
+    content: " ";
+    background-image: linear-gradient(180deg, rgba(0,61,89,0.56)-44.86%, rgba(0,61,89,0.15)133.58%);
+
+}
+
+.sectionBg .sectionBgImg{
+position: relative;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 1;
+}
+.sectionBgImg{
+    filter: opacity(0.8) drop-shadow(0 0 0 rgba(0, 0, 0, .9));
+}
+
+.textWelcome .welcome, .textWelcome .btnAutochtone{
+    position: absolute;
+    bottom: 200px;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     z-index: 1;
+}
+
+.textWelcome .btnAutochtone{
+    left: 34em;
+    bottom: 10em;
+}
+
+.welcome{
+    color: #fff;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 77px;
+
+}
+.btnAutochtone{
+   /* width: 220px; */
+   background-color: #003d59;
+   padding: 20px;
+   border-radius: 8px;
+   text-align: center;
+   justify-content: ;
+   max-width: 220px;
+   
+}
+
+.navDestPersoContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    padding: 20px;
+    /* width: 700px; */
+}
+.navDestinationPerso2{
+    
+    display: grid;
+    font-weight: 200;
+    border-bottom: 1px solid #003d59;
+    width: 600px;
+    margin-left: 370px;
+}
+.navDestinationPerso .navDestinationPerso2 .navDestPersoContent a{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.activityTitle{
+    color:#d3045f;
+    /* margin-bottom: 13px; */
+    font-weight: 600;
+    font-size: 28px;
+    border-bottom: 1px solid #d3045f;
+    width: 160px;
+}
+
+.activityText{
+    width: 400px;
+    font-size: 38px;
+    /* line-height:px; */
+}
+
+
+
+.textDestination p.activityTitle{
+    width: 300px;
+    line-height: 38px;
+    font-size: 28px;
+}
+.activityDescription{
+    position: relative;
+    width: 100%;
+    right: 115px;
+    height: 100%;
+    transition-property: transform, -webkit-transform;
+    display: flex;
+    z-index: 1;
+
+}
+i{
+    
+}
+
+.textDestination{
+    width: 359px;
+  
+}
+
+
+.activity{
+    margin-top: 20px;
+    background-image: linear-gradient(90deg,#fff 44.4%, #cce4f0 0);
+    /* padding: 120px; */
+
+}
+
+.activityDescriptionContainer{
+    
+    /* justify-content: center; */
+}
+.activity .activityDescriptionContainer .activityImageContainer .activitySlide .activitySlideSwipper{
+    /* position: absolute; */
+    left: 550px;
+} 
+.activityImageContainer .activitySlide .activitySlideWripper img{
+    width: 400px;
+}
+.swipperPagination{
+border: 5px solid black;
+position: absolute;
+left: 510px;
+}
+
+.miniatureDestination .miniatureImage img{
+    /* width: 100px; */
+    /* border: 2px solid black; */
+    background-image: url('../medias/Langjokull-tunnel-1024x975.jpg') linear-gradient(rgb(0, 61, 89), rgb(0, 61, 89));
+    border-radius: 4px;
+}
+
+.miniatureDestination .miniatureImage{
+    margin-bottom: 20px;
+}
+
+.activitySlideSwipper img {
+    position: absolute;
+    right:40px;
+    
+}
+
+
+.miniatureDestination {
+    position:absolute;
+    top: 108%;
+    left: 78%;
+    
+}
+.information{
+    margin-top: 50px;
+}
+
+/* css tiré*/
+.infoImage{
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(40,39,39,0);
+--swiper-theme-color: $themeColor;
+text-align: left;
+font-family: Helvetica,sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+color: #003d59;
+cursor: default;
+hyphens: manual;
+padding: 2px 0;
+box-sizing: border-box;
+margin-left: 112px;
+}
+
+
+
+
+
+
+
+
+
+.info{
+    position: absolute;
+    left: 0 ;
+    right: 0;
+    margin-top: 80px;
+    background-color: #ffc4ab;
+}
+
+/* partie css de l'intégration */
+.partie1 {
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); 
+}
+
+.imgGauche{
+    width: 40%;
+  height: 521px;
+}
+
+.formContent {
+    width: 60%;
+    padding-top: 65px;
+    padding-left: 51px;
+    padding-right: 51px; }
+
+.destinationTextContent h3,p{
+    width:380px;
+    font-size: 25px;
+}
+.destinationTextContent a{
+    color:#d3045f;
+    font-weight: bold;
+    font-style: italic;
+}
+.destinationTextContent a:hover{
+    color: #fe5925;
+}
+.defile{
+    position: relative;
+    left: -5%;
+    width: 450px;
+    /* height: 200px; */
+    margin-top: 10px;
+    overflow: hidden;
+    border: 3px solid #b6d1cd;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);
+    
+    margin: auto;
+}
+.imgDestination{
+
+    max-width: 450px;
+    display: flex;
+    /* border: 1px solid black;  */
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 40%);
+    animation-duration: 10s;
+    animation-name: monCaroussel;
+    animation-iteration-count: infinite;
+}
+
+
+.imgDestination img{
+    max-width: 450px;
+}
+@keyframes monCaroussel {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-450px);   
+    }
+    50%{
+        transform: translateX(-900px);   
+    }
+    75%{
+        transform: translateX(-1350px);   
+    }
+    100%{
+        transform: translateX(0);    
+    
+}
+}
+
+
+
+.destinationText{
+    display: flex;
+    /* gap: 100px; */
+    
+}
+
+.destinationLegend .destinationText{
+    display: none;
+}
+.destinationLegend .destinationText.active {
+    display: flex;
+}
+
+.map
+{
+    position: fixed;
+    margin-top: 0%;
+    z-index: 10;
+    width: 100%;
+    height: 530px;
+    background-color: rgba(255, 255, 255, 0.754);
+    color: #fff;
+}
+
+.map .map-space
+{
+    width: 70%;
+    height: 400px;
+    margin: 0 0 0 15%;
+}
+
+.map p
+{
+    cursor: pointer;
+}
